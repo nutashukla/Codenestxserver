@@ -1,0 +1,62 @@
+POST  http://localhost:5000/auth/register
+Content-Type: application/json
+
+{   "name": "abcd",
+    "email":"atulhritik@gmail.com",
+    "password":"123456",
+    "cpassword":"123456"
+    
+}
+#####
+POST  http://localhost:5000/Aauth/register
+Content-Type: application/json
+
+{   "name": "abcd",
+    "email":"atulhritik1@gmail.com",
+    "password":"123456",
+    "cpassword":"123456"
+    
+}
+####
+POST http://localhost:5000/Aauth/login
+Content-Type: application/json
+
+{
+    "email":"aks@gmail.com",
+    "password":"123456"
+}
+#####
+POST http://localhost:5000/Aauth/adminmdata
+Content-Type: application/json
+
+{
+    "email":"aks@gmail.com"
+}
+####
+GET  http://localhost:5000/Aauth/private
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTI3MTYwNTYsImV4cCI6MTY5MjcxNjI5NiwiYXVkIjoiNjRlNGM5ZWZiYzQ2ZTYxODFmNjlhYWIyIiwiaXNzIjoiZ29vZ2xlLmNvbSJ9.3gMzB8E2q8ELZc2LTPCf7gtD79UQ6f_9hwZiTmLFGsw
+#####
+GET  http://localhost:5000/auth/private
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTIxNzY1OTksImV4cCI6MTY5MjE3Njg5OSwiYXVkIjoiNjRkYzkwNTJhMDQzMzI5OTgxZTVjNmZiIiwiaXNzIjoiZ29vZ2xlLmNvbSJ9.AOkYt2kHZVEG-WPXc78eT4NZlM46a-MiTXPGbjQ5_os
+
+
+#####
+
+GET  http://localhost:5000/auth/cart
+#####
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email":"aks@gmail.com",
+    "password":"123456"
+}
+#####
+
+POST http://localhost:5000/auth/cartitems
+Content-Type: application/json
+
+{
+    "pname":"pro1",
+    "quantity":1
+}
